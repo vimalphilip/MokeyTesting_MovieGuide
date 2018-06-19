@@ -1,3 +1,16 @@
+Monkey UI Testing
+This repository is used to learn Monkey UI Testing.To start the app, Add your themoviedb.org API key in the `gradle.properties` file.
+
+Code change has been made at MovieDetatilsPresenterImpl.java () to simulate an error_condition. When a specific movie is clicked, it will not show the movieDetails because the "line view.showDetails(movie)" was commented out.
+
+@Override
+    public void showDetails(Movie movie) {
+        if (isViewAttached()) {
+           //view.showDetails(movie);    
+        }
+}
+
+
 # MovieGuide
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=59100d0f7a93230001683759&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/59100d0f7a93230001683759/build/latest?branch=master)
 
@@ -6,7 +19,7 @@ Android app that lists popular/highest-rated movies, shows trailers and reviews.
 This app showcases the MVP pattern, RxJava, Dagger 2 and Uncle Bob Martin's Clean Architecture approach.
 Optimized for tablets.
 
-Add your themoviedb.org API key in the `local.properties` file:
+Add your themoviedb.org API key in the `gradle.properties` file:
 ```
 tmdb_api_key=YOUR_API_KEY
 ```

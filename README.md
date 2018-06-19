@@ -1,7 +1,7 @@
-Monkey UI Testing
+# Monkey UI Testing
 This repository is used to learn Monkey UI Testing.To start the app, Add your themoviedb.org API key in the `gradle.properties` file.
 
-Code change has been made at MovieDetatilsPresenterImpl.java () to simulate an error_condition. When a specific movie is clicked, it will not show the movieDetails because the "line view.showDetails(movie)" was commented out.
+Code change has been made at MovieDetatilsPresenterImpl.java (https://github.com/vimalphilip/MokeyTesting_MovieGuide/blob/master/app/src/main/java/com/esoxjem/movieguide/details/MovieDetailsPresenterImpl.java) to simulate an error_condition. When a specific movie is clicked, it will not show the movieDetails because the "line view.showDetails(movie)" was commented out.
 
 @Override
     public void showDetails(Movie movie) {
